@@ -50,22 +50,21 @@
 </p>
 
 <h2>Liens utiles</h2>
-<ul>
-  <li>
-    <a href="" target="_blank">Dépôt GitHub</a>
-  </li>
-  <li>
-    <a href="https://api.quotable.io/" target="_blank"
-      >API Quotable pour les citations</a
-    >
-  </li>
-  <li>
-    <a href="https://picsum.photos/" target="_blank"
-      >API Picsum pour les images</a
-    >
-  </li>
-</ul>
+<p>
+  <a href="https://github.com/Noel-louis/quote-generator-svelte" target="_blank"
+    >Dépôt GitHub</a
+  >
+</p>
+<p>
+  <a href="https://api.quotable.io/" target="_blank"
+    >API Quotable pour les citations</a
+  >
+</p>
+<p>
+  <a href="https://picsum.photos/" target="_blank">API Picsum pour les images</a
+  >
+</p>
 
 <style>
-  @import "css.css";
+  @import "about.css";
 </style>

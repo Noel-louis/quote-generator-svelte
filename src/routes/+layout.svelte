@@ -7,5 +7,5 @@
 <slot />
 
 <style>
-  @import "css.css";
+  @import "layout.css";
 </style>

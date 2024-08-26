@@ -21,8 +21,6 @@
   function changeDimension() {
     height = document.getElementById("height").value;
     width = document.getElementById("width").value;
-    // re-générer une image automatiquement avec les nouvelles dimensions
-    getBoth();
   }
   async function getRandomQuote() {
     const res = await fetch("https://api.quotable.io/random?maxLength=100");
@@ -59,6 +57,10 @@
   }
 
   async function getBoth() {
+    document.getElementById("genbutton").disabled = true;
+    setTimeout(() => {
+      document.getElementById("genbutton").disabled = false;
+    }, 2000);
     if (!premiereImage) {
       ajoutImageListe();
     } else {
@@ -105,7 +107,7 @@
 
 <h1>Générateur de citations aléatoires</h1>
 <div>
-  <button on:click={getBoth}>Citation aléatoire</button>
+  <button id="genbutton" on:click={getBoth}>Citation aléatoire</button>
   <button id="downloadBtn" on:click={downloadFromImage}
     >Télécharger l'image</button
   >
@@ -154,5 +156,5 @@
 {/if}
 
 <style>
-  @import "css.css";
+  @import "random.css";
 </style>

@@ -1,38 +1,44 @@
-# create-svelte
+# Quote Generator Svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## Présentation
 
-## Creating a project
+Voici un projet de svelte effectué dans le cadre du BUT3 informatique.
 
-If you're seeing this, you've probably already done this step. Congrats!
+Le projet consiste en un générateur de citation (en anglais) avec une image de fond et le tout de façon aléatoire.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Le projet contient 3 pages :
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- une page d'accueil
+- une page About
+- une page pour la génération des images
 
-## Developing
+## Developpement
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Pour lancer l'application, effecutez les commandes suivantes :
 
 ```bash
+npm install
+
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
 ## Building
 
-To create a production version of your app:
+Pour créer une version de production de l'application :
 
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+une préview est possible en tappant `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> Pour dépolyer l'application, il sera surement nécessaire d'installer un [adapter](https://kit.svelte.dev/docs/adapters) pour l'environnement cible.
+
+## Auteur et sources
+
+Louis Noël est l'auteur de ce projet
+
+les sources de données utilisés sont les suivantes :
+
+- https://github.com/lukePeavey/quotable
+- https://picsum.photos/
